@@ -1,0 +1,2 @@
+include README.md CHANGELOG.md COPYRIGHT SECURITY.md STRATUM-1.0-SDK.md
+recursive-include examples *.py

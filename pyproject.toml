@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stratumvisor-sdk"
+version = "0.2.0"
+description = "Python SDK for automating STRATUM 1.0"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Cyber Ballistics Inc. / STRATUMvisor"}]
+dependencies = [
+  "requests>=2.31.0",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Operating System :: OS Independent",
+  "Topic :: System :: Systems Administration",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
