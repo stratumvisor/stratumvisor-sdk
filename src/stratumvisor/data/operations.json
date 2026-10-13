@@ -1,0 +1,1762 @@
+{
+  "activaterevision_post_api_arsenal_revisions_activate": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/revisions/activate",
+    "request_body_required": true,
+    "summary": "Activate Revision"
+  },
+  "activity_get_api_arsenal_activity": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "limit",
+        "required": false
+      },
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/activity",
+    "request_body_required": false,
+    "summary": "Activity"
+  },
+  "addnetwork_post_api_labs_session_networks_add": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/networks/add",
+    "request_body_required": true,
+    "summary": "Add Network"
+  },
+  "addnode_post_api_labs_session_nodes_add": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/add",
+    "request_body_required": true,
+    "summary": "Add Node"
+  },
+  "addnodedisk_post_api_labs_session_nodes_disks_add": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/disks/add",
+    "request_body_required": true,
+    "summary": "Add node data disk"
+  },
+  "addtext_post_api_labs_session_textobjects_add": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/textobjects/add",
+    "request_body_required": true,
+    "summary": "Add Text"
+  },
+  "applyStratumAIMission": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/missions/{id}/apply",
+    "request_body_required": true,
+    "summary": "Apply an approved STRATUM AI Mission"
+  },
+  "archivedatacenter_post_api_labs_archive": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/archive",
+    "request_body_required": true,
+    "summary": "Archive datacenter"
+  },
+  "auth_get_api_auth": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/auth",
+    "request_body_required": false,
+    "summary": "Get authentication context"
+  },
+  "authcontext_get_api_stratum_auth_context": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/auth/context",
+    "request_body_required": false,
+    "summary": "Get authentication context"
+  },
+  "bundlecandidates_get_api_arsenal_bundle_candidates": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/bundle-candidates",
+    "request_body_required": false,
+    "summary": "Bundle Candidates"
+  },
+  "bundleexport_post_api_arsenal_bundle_export": {
+    "content_types": [
+      "application/json",
+      "application/x-www-form-urlencoded",
+      "multipart/form-data"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/bundle-export",
+    "request_body_required": true,
+    "summary": "Bundle Export"
+  },
+  "cancelStratumAIChatJob": {
+    "content_types": [],
+    "method": "DELETE",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/chat/jobs/{id}",
+    "request_body_required": false,
+    "summary": "Cancel a STRATUM AI reasoning job"
+  },
+  "cancelStratumAIMission": {
+    "content_types": [],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/missions/{id}/cancel",
+    "request_body_required": false,
+    "summary": "Cancel a non-executing STRATUM AI Mission"
+  },
+  "changenodemedia_post_api_labs_session_nodes_media_change": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/media/change",
+    "request_body_required": true,
+    "summary": "Change node media"
+  },
+  "computefabricdata_get_api_stratum_compute_fabric": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "history",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "include_completed",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "limit",
+        "required": false
+      }
+    ],
+    "path": "/api/stratum/compute-fabric",
+    "request_body_required": false,
+    "summary": "Get compute fabric data"
+  },
+  "consolidatenodes_post_api_labs_session_nodes_consolidate": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/consolidate",
+    "request_body_required": true,
+    "summary": "Consolidate Nodes"
+  },
+  "content_get_api_arsenal_content": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "id",
+        "required": true
+      },
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/content",
+    "request_body_required": false,
+    "summary": "Content"
+  },
+  "createStratumAISchedule": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/stratum/ai/schedules",
+    "request_body_required": true,
+    "summary": "Create an AI schedule"
+  },
+  "createfolder_post_api_arsenal_folders": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/folders",
+    "request_body_required": true,
+    "summary": "Create Folder"
+  },
+  "createimage_post_api_arsenal_images_create": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/images/create",
+    "request_body_required": true,
+    "summary": "Create Image"
+  },
+  "createlab_post_api_labs": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs",
+    "request_body_required": true,
+    "summary": "Create datacenter"
+  },
+  "createnodesnapshot_post_api_labs_session_nodes_snapshots_create": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/snapshots/create",
+    "request_body_required": true,
+    "summary": "Create node snapshot"
+  },
+  "createsession_post_api_labs_session_factory_create": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/factory/create",
+    "request_body_required": true,
+    "summary": "Create lab session"
+  },
+  "createtemplate_post_api_arsenal_templates_create": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/templates/create",
+    "request_body_required": true,
+    "summary": "Create Template"
+  },
+  "createvmimageversion_post_api_arsenal_vm_images_create_version": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/vm-images/create-version",
+    "request_body_required": true,
+    "summary": "Create VMImage Version"
+  },
+  "deleteStratumAISchedule": {
+    "content_types": [],
+    "method": "DELETE",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/schedules/{id}",
+    "request_body_required": false,
+    "summary": "Delete an AI schedule"
+  },
+  "delete_post_api_arsenal_items_delete": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/items/delete",
+    "request_body_required": true,
+    "summary": "Delete"
+  },
+  "deletelab_delete_api_labs": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "DELETE",
+    "parameters": [],
+    "path": "/api/labs",
+    "request_body_required": true,
+    "summary": "Delete datacenter"
+  },
+  "deletenetworks_post_api_labs_session_networks_delete": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/networks/delete",
+    "request_body_required": true,
+    "summary": "Delete Networks"
+  },
+  "deletenodedisk_post_api_labs_session_nodes_disks_delete": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/disks/delete",
+    "request_body_required": true,
+    "summary": "Delete node data disk"
+  },
+  "deletenodes_post_api_labs_session_nodes_delete": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/delete",
+    "request_body_required": true,
+    "summary": "Delete Nodes"
+  },
+  "deletenodesnapshot_post_api_labs_session_nodes_snapshots_delete": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/snapshots/delete",
+    "request_body_required": true,
+    "summary": "Delete node snapshot"
+  },
+  "deletetexts_post_api_labs_session_textobjects_delete": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/textobjects/delete",
+    "request_body_required": true,
+    "summary": "Delete Texts"
+  },
+  "diff_get_api_arsenal_diff": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "from",
+        "required": true
+      },
+      {
+        "in": "query",
+        "name": "to",
+        "required": true
+      },
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/diff",
+    "request_body_required": false,
+    "summary": "Diff"
+  },
+  "download_get_api_arsenal_download": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "id",
+        "required": true
+      },
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/download",
+    "request_body_required": false,
+    "summary": "Download"
+  },
+  "editinterface_post_api_labs_session_interfaces_edit": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/interfaces/edit",
+    "request_body_required": true,
+    "summary": "Edit Interface"
+  },
+  "editnetwork_post_api_labs_session_networks_edit": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/networks/edit",
+    "request_body_required": true,
+    "summary": "Edit Network"
+  },
+  "editnode_post_api_labs_session_nodes_edit": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/edit",
+    "request_body_required": true,
+    "summary": "Edit Node"
+  },
+  "editnodesbatch_post_api_labs_session_nodes_edit_batch": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/edit/batch",
+    "request_body_required": true,
+    "summary": "Edit Nodes Batch"
+  },
+  "edittext_post_api_labs_session_textobjects_edit": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/textobjects/edit",
+    "request_body_required": true,
+    "summary": "Edit Text"
+  },
+  "ejectnodemedia_post_api_labs_session_nodes_media_eject": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/media/eject",
+    "request_body_required": true,
+    "summary": "Eject node media"
+  },
+  "encryptedruntimecapabilities_get_api_stratum_encrypted_runtime_capabilities": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/encrypted-runtime/capabilities",
+    "request_body_required": false,
+    "summary": "Get encrypted-runtime capabilities"
+  },
+  "executioncapabilities_get_api_stratum_execution_capabilities": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/execution/capabilities",
+    "request_body_required": false,
+    "summary": "Get local execution capabilities"
+  },
+  "executioncapabilityinventory_get_api_stratum_execution_inventory": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/execution/inventory",
+    "request_body_required": false,
+    "summary": "Get execution capability inventory"
+  },
+  "executionworkers_get_api_stratum_execution_workers": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/execution/workers",
+    "request_body_required": false,
+    "summary": "List native STRATUM execution workers"
+  },
+  "exportdatacenter_get_api_labs_export": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "path",
+        "required": true
+      }
+    ],
+    "path": "/api/labs/export",
+    "request_body_required": false,
+    "summary": "Export datacenter"
+  },
+  "exportnodes_post_api_labs_session_nodes_export": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/export",
+    "request_body_required": true,
+    "summary": "Export Nodes"
+  },
+  "folders_get_api_folders": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "path",
+        "required": false
+      }
+    ],
+    "path": "/api/folders",
+    "request_body_required": false,
+    "summary": "List lab folders"
+  },
+  "getStratumAIChatJob": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/chat/jobs/{id}",
+    "request_body_required": false,
+    "summary": "Poll a STRATUM AI reasoning job"
+  },
+  "getStratumAIDesiredState": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/desired-states/{id}",
+    "request_body_required": false,
+    "summary": "Read a persistent AI desired state"
+  },
+  "getStratumAIDesiredStates": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "path",
+        "required": false
+      }
+    ],
+    "path": "/api/stratum/ai/desired-states",
+    "request_body_required": false,
+    "summary": "List persistent AI desired states"
+  },
+  "getStratumAIMission": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/missions/{id}",
+    "request_body_required": false,
+    "summary": "Read a durable STRATUM AI Mission"
+  },
+  "getStratumAIScheduleRuns": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      },
+      {
+        "in": "query",
+        "name": "limit",
+        "required": false
+      }
+    ],
+    "path": "/api/stratum/ai/schedules/{id}/runs",
+    "request_body_required": false,
+    "summary": "Read AI schedule run history"
+  },
+  "getStratumAISchedules": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/ai/schedules",
+    "request_body_required": false,
+    "summary": "List AI schedules"
+  },
+  "getStratumAIStatus": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/ai/status",
+    "request_body_required": false,
+    "summary": "Read STRATUM AI availability"
+  },
+  "getStratumNOC": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/noc",
+    "request_body_required": false,
+    "summary": "Read fleet NOC status"
+  },
+  "getTemplateDetails": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "template",
+        "required": true
+      },
+      {
+        "in": "query",
+        "name": "refresh",
+        "required": false
+      }
+    ],
+    "path": "/api/list/templates/{template}",
+    "request_body_required": false,
+    "summary": "Get template details"
+  },
+  "gpufabricinventory_get_api_stratum_gpu_fabric_inventory": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/gpu-fabric/inventory",
+    "request_body_required": false,
+    "summary": "Get GPU fabric inventory"
+  },
+  "gpufabricleases_get_api_stratum_gpu_fabric_leases": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/gpu-fabric/leases",
+    "request_body_required": false,
+    "summary": "List GPU leases"
+  },
+  "gpufabricquote_get_api_stratum_gpu_fabric_quote": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "type",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "count",
+        "required": false
+      }
+    ],
+    "path": "/api/stratum/gpu-fabric/quote",
+    "request_body_required": false,
+    "summary": "Quote GPU availability"
+  },
+  "growimage_post_api_arsenal_images_grow": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/images/grow",
+    "request_body_required": true,
+    "summary": "Grow Image"
+  },
+  "grownodedisk_post_api_labs_session_nodes_disks_grow": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/disks/grow",
+    "request_body_required": true,
+    "summary": "Grow node data disk"
+  },
+  "health_get_healthz": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/healthz",
+    "request_body_required": false,
+    "summary": "Health check"
+  },
+  "hibernatenodes_post_api_labs_session_nodes_hibernate": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/hibernate",
+    "request_body_required": true,
+    "summary": "Hibernate Nodes"
+  },
+  "history_get_api_arsenal_history": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "id",
+        "required": true
+      },
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/history",
+    "request_body_required": false,
+    "summary": "History"
+  },
+  "icons_get_api_icons": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/icons",
+    "request_body_required": false,
+    "summary": "List image icons"
+  },
+  "importdatacenter_post_api_labs_import": {
+    "content_types": [
+      "multipart/form-data"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/import",
+    "request_body_required": true,
+    "summary": "Import datacenter"
+  },
+  "item_get_api_arsenal_item": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "id",
+        "required": true
+      },
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/item",
+    "request_body_required": false,
+    "summary": "Item"
+  },
+  "job_get_api_arsenal_job": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "id",
+        "required": true
+      },
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/job",
+    "request_body_required": false,
+    "summary": "Job"
+  },
+  "jobs_get_api_arsenal_jobs": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "limit",
+        "required": false
+      },
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/jobs",
+    "request_body_required": false,
+    "summary": "Jobs"
+  },
+  "layerdata_get_api_labs_session_layers": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "path",
+        "required": true
+      }
+    ],
+    "path": "/api/labs/session/layers",
+    "request_body_required": false,
+    "summary": "Get topology layers"
+  },
+  "lineage_get_api_arsenal_lineage": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "id",
+        "required": true
+      },
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/lineage",
+    "request_body_required": false,
+    "summary": "Lineage"
+  },
+  "listStratumAIMissions": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/ai/missions",
+    "request_body_required": false,
+    "summary": "List durable STRATUM AI Missions"
+  },
+  "listlabs_get_api_labs": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "path",
+        "required": false
+      }
+    ],
+    "path": "/api/labs",
+    "request_body_required": false,
+    "summary": "List datacenters"
+  },
+  "listnodesnapshots_get_api_labs_session_nodes_snapshots": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "path",
+        "required": true
+      },
+      {
+        "in": "query",
+        "name": "id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "node_id",
+        "required": false
+      }
+    ],
+    "path": "/api/labs/session/nodes/snapshots",
+    "request_body_required": false,
+    "summary": "List node snapshots"
+  },
+  "locklab_post_api_labs_session_lab_lock": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/lab/lock",
+    "request_body_required": true,
+    "summary": "Lock Lab"
+  },
+  "me_get_api_arsenal_me": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/arsenal/me",
+    "request_body_required": false,
+    "summary": "Me"
+  },
+  "mediacatalog_get_api_stratum_media_catalog": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/media/catalog",
+    "request_body_required": false,
+    "summary": "Get media catalog"
+  },
+  "migratenode_post_api_labs_session_nodes_migrate": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/migrate",
+    "request_body_required": true,
+    "summary": "Migrate Node"
+  },
+  "networkfabricstatus_get_api_stratum_network_fabric_status": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/network-fabric/status",
+    "request_body_required": false,
+    "summary": "Get network fabric status"
+  },
+  "networks_get_api_list_networks": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/list/networks",
+    "request_body_required": false,
+    "summary": "List network types"
+  },
+  "nodedetails_get_api_labs_session_nodes": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "path",
+        "required": true
+      },
+      {
+        "in": "query",
+        "name": "id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "node_id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "view",
+        "required": false
+      }
+    ],
+    "path": "/api/labs/session/nodes",
+    "request_body_required": false,
+    "summary": "Get node details"
+  },
+  "nodedisks_get_api_labs_session_nodes_disks": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "path",
+        "required": true
+      },
+      {
+        "in": "query",
+        "name": "id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "node_id",
+        "required": false
+      }
+    ],
+    "path": "/api/labs/session/nodes/disks",
+    "request_body_required": false,
+    "summary": "Get node disk inventory"
+  },
+  "nodemedia_get_api_labs_session_nodes_media": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "path",
+        "required": true
+      },
+      {
+        "in": "query",
+        "name": "id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "node_id",
+        "required": false
+      }
+    ],
+    "path": "/api/labs/session/nodes/media",
+    "request_body_required": false,
+    "summary": "Get node media"
+  },
+  "nodestatus_post_api_labs_session_nodestatus": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodestatus",
+    "request_body_required": true,
+    "summary": "Get node lifecycle status"
+  },
+  "p2pnetwork_post_api_labs_session_networks_p2p": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/networks/p2p",
+    "request_body_required": true,
+    "summary": "P2p Network"
+  },
+  "pauseStratumAIMission": {
+    "content_types": [],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/missions/{id}/pause",
+    "request_body_required": false,
+    "summary": "Pause a running STRATUM AI Mission at a safe checkpoint"
+  },
+  "pausenodes_post_api_labs_session_nodes_pause": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/pause",
+    "request_body_required": true,
+    "summary": "Pause Nodes"
+  },
+  "planStratumAIDesiredStateLifecycle": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/desired-states/{id}/lifecycle",
+    "request_body_required": true,
+    "summary": "Plan desired-state retirement"
+  },
+  "postStratumAIChat": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/stratum/ai/chat",
+    "request_body_required": true,
+    "summary": "Run a synchronous STRATUM AI Mission reasoning turn"
+  },
+  "promotablevms_get_api_arsenal_promotable_vms": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/promotable-vms",
+    "request_body_required": false,
+    "summary": "Promotable VMs"
+  },
+  "promotevm_post_api_arsenal_images_promote": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/images/promote",
+    "request_body_required": true,
+    "summary": "Promote VM"
+  },
+  "reconcileStratumAIDesiredState": {
+    "content_types": [],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/desired-states/{id}/reconcile",
+    "request_body_required": false,
+    "summary": "Reconcile desired state now"
+  },
+  "rename_post_api_arsenal_items_rename": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/items/rename",
+    "request_body_required": true,
+    "summary": "Rename"
+  },
+  "restoredatacenter_post_api_labs_restore": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/restore",
+    "request_body_required": true,
+    "summary": "Restore datacenter"
+  },
+  "resumeStratumAIMission": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/missions/{id}/resume",
+    "request_body_required": true,
+    "summary": "Resume a paused or reconciled STRATUM AI Mission"
+  },
+  "resumenodes_post_api_labs_session_nodes_resume": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/resume",
+    "request_body_required": true,
+    "summary": "Resume Nodes"
+  },
+  "revertnodesnapshot_post_api_labs_session_nodes_snapshots_revert": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/snapshots/revert",
+    "request_body_required": true,
+    "summary": "Revert node snapshot"
+  },
+  "revisioncontent_get_api_arsenal_revision_content": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "id",
+        "required": true
+      },
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/revision-content",
+    "request_body_required": false,
+    "summary": "Revision Content"
+  },
+  "roots_get_api_arsenal_roots": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/roots",
+    "request_body_required": false,
+    "summary": "Roots"
+  },
+  "runStratumAISchedule": {
+    "content_types": [],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/schedules/{id}/run",
+    "request_body_required": false,
+    "summary": "Run an AI schedule now"
+  },
+  "savecontent_post_api_arsenal_items_save": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/items/save",
+    "request_body_required": true,
+    "summary": "Save Content"
+  },
+  "sessioninfo_get_api_labs_session_info": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "path",
+        "required": true
+      }
+    ],
+    "path": "/api/labs/session/info",
+    "request_body_required": false,
+    "summary": "Session Info"
+  },
+  "setStratumAIReconcileMode": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/desired-states/{id}/reconcile-mode",
+    "request_body_required": true,
+    "summary": "Configure desired-state reconciliation"
+  },
+  "setinterfacequality_post_api_labs_session_interfaces_setquality": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/interfaces/setquality",
+    "request_body_required": true,
+    "summary": "Set Interface Quality"
+  },
+  "setinterfacesuspend_post_api_labs_session_interfaces_setSuspend": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/interfaces/setSuspend",
+    "request_body_required": true,
+    "summary": "Set Interface Suspend"
+  },
+  "setinterfacesuspendtwoway_post_api_labs_session_interfaces_setSuspendtwo_way": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/interfaces/setSuspendtwo_way",
+    "request_body_required": true,
+    "summary": "Set Interface Suspend Two Way"
+  },
+  "startStratumAIChatJob": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/stratum/ai/chat/start",
+    "request_body_required": true,
+    "summary": "Start a proxy-safe STRATUM AI reasoning job"
+  },
+  "startnodes_post_api_labs_session_nodes_start": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/start",
+    "request_body_required": true,
+    "summary": "Start Nodes"
+  },
+  "stopnodes_post_api_labs_session_nodes_stop": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/nodes/stop",
+    "request_body_required": true,
+    "summary": "Stop Nodes"
+  },
+  "storagefabricplacement_post_api_stratum_storage_fabric_placement": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/stratum/storage-fabric/placement",
+    "request_body_required": true,
+    "summary": "Set storage placement"
+  },
+  "storagefabricstatus_get_api_stratum_storage_fabric_status": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [],
+    "path": "/api/stratum/storage-fabric/status",
+    "request_body_required": false,
+    "summary": "Get storage fabric status"
+  },
+  "templateimport_post_api_arsenal_template_import": {
+    "content_types": [
+      "multipart/form-data"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/template-import",
+    "request_body_required": true,
+    "summary": "Template Import"
+  },
+  "templates_get_api_list_templates": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "refresh",
+        "required": false
+      }
+    ],
+    "path": "/api/list/templates/",
+    "request_body_required": false,
+    "summary": "List or inspect templates"
+  },
+  "topology_get_api_labs_session_topology": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "path",
+        "required": true
+      }
+    ],
+    "path": "/api/labs/session/topology",
+    "request_body_required": false,
+    "summary": "Get lab topology"
+  },
+  "tree_get_api_arsenal_tree": {
+    "content_types": [],
+    "method": "GET",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "root",
+        "required": true
+      },
+      {
+        "in": "query",
+        "name": "path",
+        "required": false
+      },
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/tree",
+    "request_body_required": false,
+    "summary": "Tree"
+  },
+  "unlocklab_post_api_labs_session_lab_unlock": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/session/lab/unlock",
+    "request_body_required": true,
+    "summary": "Unlock Lab"
+  },
+  "updateStratumAISchedule": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "path",
+        "name": "id",
+        "required": true
+      }
+    ],
+    "path": "/api/stratum/ai/schedules/{id}",
+    "request_body_required": true,
+    "summary": "Edit an AI schedule"
+  },
+  "updatedatacentermetadata_post_api_labs_metadata": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [],
+    "path": "/api/labs/metadata",
+    "request_body_required": true,
+    "summary": "Update datacenter metadata"
+  },
+  "upload_post_api_arsenal_upload": {
+    "content_types": [
+      "multipart/form-data"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/upload",
+    "request_body_required": true,
+    "summary": "Upload"
+  },
+  "uploadstream_post_api_arsenal_upload_stream": {
+    "content_types": [
+      "application/octet-stream"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "query",
+        "name": "root",
+        "required": true
+      },
+      {
+        "in": "query",
+        "name": "path",
+        "required": true
+      },
+      {
+        "in": "query",
+        "name": "name",
+        "required": true
+      },
+      {
+        "in": "query",
+        "name": "comment",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/upload-stream",
+    "request_body_required": true,
+    "summary": "Upload Stream"
+  },
+  "validatetemplate_post_api_arsenal_validate_template": {
+    "content_types": [
+      "application/json"
+    ],
+    "method": "POST",
+    "parameters": [
+      {
+        "in": "header",
+        "name": "X-Arsenal-Tenant-Id",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "tenantId",
+        "required": false
+      }
+    ],
+    "path": "/api/arsenal/validate-template",
+    "request_body_required": false,
+    "summary": "Validate Template"
+  }
+}
